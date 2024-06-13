@@ -10,7 +10,7 @@ public class calculator {
             boolean Arab = input.matches("[0-9 ]+");
             boolean Rom = input.matches("[IVXLCDM ]+");
             if (!Rom && !Arab) {
-            throw new Exception();
+            throw new Exception("throws Exception");
                 }
             } catch (Exception e) {
         }
@@ -22,7 +22,6 @@ public class calculator {
             } else System.out.println(result);
         } catch (Exception e) {
             throw new Exception("throws Exception");
-//            System.out.println("throws Exception");
         }
     }
     static String calc(String input) throws Exception {
@@ -41,7 +40,6 @@ public class calculator {
         } catch (Exception e) {
                 System.out.println("throws Exception");
             }
-        // Разделить строку на три части
         String leftOperand = input.substring(0, Index).trim();
         String operator = input.substring(Index, Index + 1).trim();
         String rightOperand = input.substring(Index + 1).trim();
