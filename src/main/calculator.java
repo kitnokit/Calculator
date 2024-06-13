@@ -13,7 +13,6 @@ public class calculator {
             throw new Exception("throws Exception");
                 }
             } catch (Exception e) {
-            throw new RuntimeException(e);
         }
         try {
             calc(input);
