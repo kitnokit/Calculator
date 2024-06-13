@@ -124,11 +124,11 @@ public class calculator {
             } result = Integer.toString(b);
         } return result;
     }
-    static int findIndex(String expression) {
+    static int findIndex(String inPut) {
         char[] operators = {'+', '-', '*', '/'};
         int index = 0;
         for (char operator : operators) {
-            index = expression.indexOf(operator);
+            index = inPut.indexOf(operator);
             if (index != -1) {
                 return index;
             }
