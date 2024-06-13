@@ -32,8 +32,8 @@ public class calculator {
                 "VI", "VII", "VIII", "IX", "X", "XI", "XII",
                 "XIII", "XIV", "XV", "XVI", "XVII", "XVIII",
                 "XIX", "XX"};
-        int x = 0;
-        int y = 0;
+        int x;
+        int y;
         int Index = 0;
         try {
             Index = findIndex(input);
