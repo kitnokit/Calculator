@@ -1,7 +1,4 @@
 package main;
-import com.sun.source.tree.BreakTree;
-
-import java.util.Arrays;
 import java.util.Scanner;
 class calculator {
     public static void main(String[] args) throws Exception {
@@ -30,7 +27,7 @@ class calculator {
 
     static String calc(String input) throws Exception {
         String leftOperand, operator, rightOperand;
-        String result = null;
+        String result;
         String[] romArray = {"I", "II", "III", "IV", "V",
                 "VI", "VII", "VIII", "IX", "X"};
         int x, y, b;
@@ -64,32 +61,6 @@ class calculator {
         if (x > 10 || y > 10 || x <= 0 || y <= 0) {
             throw new Exception("throws Exception");
         } else
-//            switch (leftOperand) {
-//                case "I" -> x = 1;
-//                case "II" -> x = 2;
-//                case "III" -> x = 3;
-//                case "IV" -> x = 4;
-//                case "V" -> x = 5;
-//                case "VI" -> x = 6;
-//                case "VII" -> x = 7;
-//                case "VIII" -> x = 8;
-//                case "IX" -> x = 9;
-//                case "X" -> x = 10;
-//                default -> throw new Exception("throws Exception");
-//            }
-//            switch (rightOperand) {
-//                case "I" -> y = 1;
-//                case "II" -> y = 2;
-//                case "III" -> y = 3;
-//                case "IV" -> y = 4;
-//                case "V" -> y = 5;
-//                case "VI" -> y = 6;
-//                case "VII" -> y = 7;
-//                case "VIII" -> y = 8;
-//                case "IX" -> y = 9;
-//                case "X" -> y = 10;
-//                default -> throw new Exception("throws Exception");
-//            }
             switch (operator) {
                 case "+" -> b = x + y;
                 case "-" -> b = x - y;
